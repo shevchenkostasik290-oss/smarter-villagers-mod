@@ -146,7 +146,7 @@ public class VillagerEventHandler {
             if (distanceSqr <= 4.0D && this.attackCooldown <= 0) {
                 this.attackCooldown = 20;
                 villager.swingArm(Hand.MAIN_HAND);
-                target.attackEntityFrom(DamageSource.causeMobDamage(villager), 2.0F);
+                target.attackEntityFrom(DamageSource.GENERIC, 2.0F);
             }
         }
     }
